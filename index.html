@@ -65,22 +65,23 @@
         font-weight: normal;
         font-style: normal;text-align: right;background-color: #f1f1f1;padding: 10px; margin-top: 0px; margin-bottom: 5px;font-size: 21px;}
 	</style>
-   
 </head>
 
 <body style="font-family: lato;">
-    <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+    <button onclick="backTop()" id="myBtn" title="Go to top">^</button>
     <p style="text-align: center;font-size: 22px;background-color: #00ff8000;" >بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</p>
 
-    <input type="text" id="myInput" onkeyup="myFunction()" class="form-control" style="width:20%; border-radius: 15px;" placeholder="Search..." title="Type in a name">
+    <input type="text" id="myInput" onkeyup="search()" class="form-control" style="width:20%; border-radius: 15px;" placeholder="Search..." title="Type in a name">
 
     <table id="myTable">
         <tr class="header">
             <td style="text-align: center;font-size: 25px;">Dua For Daily Life</td>
         </tr>
-		<tr>    
+		<!-- <tr>    
             <td>Dua For Love Of Allah
-                <p>اَللّٰهُمَّ إِنِّىْ أَسْأَلُكَ حُبَّكَ وَحُبَّ مَنْ يُحِبُّكَ وَالْعَمَلَ الَّذِىْ يُبَلِّغُنِىْ حُبَّكَ اَللّٰهُمَّ اجْعَلْ حُبَّكَ أَحَبَّ إِلَىَّ مِنْ نَفْسِىْ وَمَالِىْ وَأَهْلِىْ وَمِنَ الْمَاءِ الْبَارِدِ</p>
+                <p>
+                  `اَللّٰهُمَّ إِنِّىْ أَسْأَلُكَ حُبَّكَ وَحُبَّ مَنْ يُحِبُّكَ وَالْعَمَلَ الَّذِىْ يُبَلِّغُنِىْ حُبَّكَ اَللّٰهُمَّ اجْعَلْ حُبَّكَ أَحَبَّ إِلَىَّ مِنْ نَفْسِىْ وَمَالِىْ وَأَهْلِىْ وَمِنَ الْمَاءِ الْبَارِدِ`
+                </p>
                 হে আল্লাহ! আমি তোমার কাছে তোমার ভালোবাসা প্রত্যাশা করি, আর যে তোমাকে ভালোবাসে, তার ভালোবাসা চাই এবং আমি ঐ কাজের শক্তি চাই, যে শক্তি আমাকে তোমার ভালোবাসার দিকে নিয়ে যাবে। হে আল্লাহ! তোমার ভালোবাসাকে আমার কাছে আমার জীবন, আমার ধন-সম্পদ, আমার পরিবার-পরিজন ও ঠাণ্ডা পানির চেয়েও বেশি পছন্দনীয় করে তোলো।)
             </td> 
         </tr>
@@ -89,7 +90,7 @@
                 <p>اللَّهُمَّ آتِ نَفْسِي تَقْوَاهَا، وَزَكِّهَا أَنْتَ خَيْرُ مَنْ زَكَّاهَا، أَنْتَ وَلِيُّهَا وَمَوْلَاهَا، اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ قَلْبٍ لَا يَخْشَعُ، وَمِنْ نَفْسٍ لَا تَشْبَعُ، وَعِلْمٍ لَا يَنْفَعُ، وَدَعْوَةٍ لَا يُسْتَجَابُ لَهَا</p>
 				হে আল্লাহ! আমার আত্মায় তাকওয়া বা ভয় দান করুন। আর একে (আত্মাকে) মন্দ কাজ থেকে পবিত্র করুন; আপনিই উত্তম পবিত্রকারী আর আপনিই (আত্মার) বন্ধু এবং মালিক।
 				হে আল্লাহ! আমি আপনার কাছে ওই অন্তর থেকে আশ্রয় চাই যে অন্তর ভীত হয় না, আর ওই আত্মা থেকে যা তৃপ্ত হয় না, ওই ইলম বা জ্ঞান থেকে যা উপকারে আসে না। আর ওই দোয়া থেকে যা কবুল করা হয় না।
-            </td> 
+            </td>
         </tr>
 		<tr>    
             <td>Dua For Forgiveness
@@ -110,7 +111,7 @@
                 আমি আল্লাহতায়ালার প্রশংসাসমেত পবিত্রতা ঘোষণা করছি। তার সৃষ্টিকুলের সংখ্যার পরিমাণ, তিনি সন্তুষ্ট হওয়া পরিমাণ, তার আরশের ওজন সমপরিমাণ, তার কথা লিপিবদ্ধ করার কালি পরিমাণ।
             </td> 
         </tr>
-		  <tr>    
+		<tr>    
             <td>Dua For Halal Rijik
                 <p>اللَّهُمَّ اكْفِني بِحَلاَلِكَ عَنْ حَرَامِكَ ، وَأغْنِنِي بِفَضْلِكَ عَمَّنْ سِواكَ</p>
                 হে আল্লাহ! হারামের পরিবর্তে তোমার হালাল রুজি আমার জন্য যথেষ্ট করো। আপনি আমাকে স্বীয় দয়া ও আনুগ্রহ দ্বারা অন্য সবার থেকে ধনী বানিয়ে দিন।
@@ -121,11 +122,13 @@
                 <p>اَللّٰهُمَّ إنِّي أَسألُكَ الهُدَى وَالتُّقَى وَالعَفَافَ وَالغِنَى</p>
             হে আল্লাহ আমি আপনার কাছে হেদায়েত কামনা করি এবং আপনার ভয় তথা পরহেজগারি কামনা করি এবং আপনার কাছে সুস্থতা তথা নৈতিক পবিত্রতা কামনা করি এবং সম্পদ তথা সামর্থ্য কামনা করি।
             </td> 
-        </tr>   
+        </tr>
+        <tr>
             <td>Dua For
                 <p>اللَّهُمَّ بَاعِدْ بَيْنِي وَبَيْنَ خَطَايَايَ كَمَا بَاعَدْتَ بَيْنَ الْمَشْرِقِ وَالْمَغْرِبِ، اللَّهُمَّ نَقِّنِي مِنْ خَطَايَايَ كَمَا يُنَقَّى الثَّوْبُ الأَبْيَضُ مِنْ الدَّنَسِ، اللَّهُمَّ اغْسِلْنِي مِنْ خَطَايَايَ بِالْمَاءِ وَالثَّلْجِ وَالْبَرَدِ</p>
 				হে আল্লাহ্! তুমি আমাকে আমার পাপগুলো থেকে এত দূরে রাখ যেমন পূর্ব ও পশ্চিম পরস্পরকে পরস্পর থেকে দূরে রেখেছ। হে আল্লাহ্! তুমি আমাকে আমার পাপ হতে এমন ভাবে পরিষ্কার করে দাও, যেমন সাদা কাপড়কে ময়লা হতে পরিষ্কার করা হয়। হে আল্লাহ্! তুমি আমাকে আমার পাপ হতে (পবিত্র করার জন্য) পানি, বরফ ও শিশির দ্বারা ধুয়ে পরিষ্কার করে দাও
             </td> 
+        </tr>      
         </tr>
         <tr>    
             <td>Dua For
@@ -150,7 +153,8 @@
         </tr>
         <tr>    
             <td>Dua For
-                <p></p>
+                <p>
+                </p>
             </td> 
         </tr>
         <tr>    
@@ -172,51 +176,9 @@
             <td>Dua For
                 <p></p>
             </td> 
-        </tr>
+        </tr> -->
     </table>
-    
-    <script>
-        //Get the button
-        var mybutton = document.getElementById("myBtn");
-        
-        // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function() {scrollFunction()};
-        
-        function scrollFunction() {
-          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            mybutton.style.display = "block";
-          } else {
-            mybutton.style.display = "none";
-          }
-        }
-        
-        // When the user clicks on the button, scroll to the top of the document
-        function topFunction() {
-          document.body.scrollTop = 0;
-          document.documentElement.scrollTop = 0;
-        }
-    </script>
-    <script>
-        function myFunction() {
-            var input, filter, table, tr, td, i, txtValue;
-            input = document.getElementById("myInput");
-            filter = input.value.toUpperCase();
-            table = document.getElementById("myTable");
-            tr = table.getElementsByTagName("tr");
-            for (i = 0; i < tr.length; i++) {
-                td = tr[i].getElementsByTagName("td")[0];
-                if (td) {
-                    txtValue = td.textContent || td.innerText;
-                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                        tr[i].style.display = "";
-                    } else {
-                        tr[i].style.display = "none";
-                    }
-                }
-            }
-        }
-    </script>
-
+    <script src="./script.js"></script>
 </body>
 
 </html>
