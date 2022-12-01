@@ -1,184 +1,130 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>~Dua For Daily Life</title>
     <style>
-        html {scroll-behavior: smooth;}
-        #myBtn {
-          display: none;
-          position: fixed;
-          bottom: 20px;
-          right: 30px;
-          z-index: 99;
-          font-size: 25px;
-          border: none;
-          outline: none;
-          background-color: #242424b4;
-          color: #f1f1f1;
-          cursor: pointer;
-          padding-top: 5px;padding-right: 10px;padding-bottom: 0px;padding-left: 10px;
-          border-radius: 10px;
-        }
-        
-        #myBtn:hover {
-          background-color: rgb(122, 123, 126);
-        }
-        </style>
-    <style>
-        * { box-sizing: border-box;}
-        #myTable {
-            border-collapse: collapse;
-            width: 100%;
-            border: 1px solid #ddd;
-            font-size: 18px;
-        }
+      html {
+        scroll-behavior: smooth;
+      }
+      #myBtn {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 99;
+        font-size: 25px;
+        border: none;
+        outline: none;
+        background-color: #242424b4;
+        color: #f1f1f1;
+        cursor: pointer;
+        padding-top: 5px;
+        padding-right: 10px;
+        padding-bottom: 0px;
+        padding-left: 10px;
+        border-radius: 10px;
+      }
 
-        #myTable th,
-        #myTable td {
-            text-align: left;
-            padding: 12px;
-        }
-
-        #myTable tr {
-            border-bottom: 1px solid #ddd;
-        }
-        .header,
-        #myTable tr:hover {
-            background-color: #f1f1f1;
-        }
-        .form-control {position:fixed; right:15px; top:20px; display: block; height: 35px; padding: 6px 12px; font-size: 14px; line-height: 1.42857143; color: #555; background-color: #fff; background-image: none; border: 1px solid #ccc; box-shadow: inset 0 1px 1px rgba(0,0,0,.075); transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;}
+      #myBtn:hover {
+        background-color: rgb(122, 123, 126);
+      }
     </style>
     <style>
-		@font-face {
-        font-family: 'Al Qalam Quran Majeed 2';
-        src: url('https://syrazzmbr5e7lyabqmnbzg-on.drv.tw/webfont/AlQalamQuranMajeed2.woff2') format('woff2'),
-            url('https://syrazzmbr5e7lyabqmnbzg-on.drv.tw/webfont/AlQalamQuranMajeed2.woff') format('woff');
+      * {
+        box-sizing: border-box;
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        border: 1px solid #ddd;
+        font-size: 18px;
+      }
+
+      table th,
+      table td {
+        text-align: left;
+        padding: 12px;
+      }
+
+      table tr {
+        border-bottom: 1px solid #ddd;
+      }
+      table tr:hover {
+        background-color: #f1f1f1;
+      }
+      .header:hover {
+        background-color: #f1f1f1;
+      }
+      .form-control {
+        position: fixed;
+        right: 15px;
+        top: 20px;
+        display: block;
+        height: 35px;
+        padding: 6px 12px;
+        font-size: 14px;
+        line-height: 1.42857143;
+        color: #555;
+        background-color: #fff;
+        background-image: none;
+        border: 1px solid #ccc;
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+        transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+      }
+    </style>
+    <style>
+      @font-face {
+        font-family: "Al Qalam Quran Majeed 2";
+        src: url("https://syrazzmbr5e7lyabqmnbzg-on.drv.tw/webfont/AlQalamQuranMajeed2.woff2")
+            format("woff2"),
+          url("https://syrazzmbr5e7lyabqmnbzg-on.drv.tw/webfont/AlQalamQuranMajeed2.woff")
+            format("woff");
         font-weight: normal;
         font-style: normal;
         font-display: swap;
-        }
-        p{font-family: 'Al Qalam Quran Majeed 2';
+      }
+      p {
+        font-family: "Al Qalam Quran Majeed 2";
         font-weight: normal;
-        font-style: normal;text-align: right;background-color: #f1f1f1;padding: 10px; margin-top: 0px; margin-bottom: 5px;font-size: 21px;}
-	</style>
-</head>
+        font-style: normal;
+        text-align: right;
+        background-color: #f1f1f1;
+        padding: 10px;
+        margin-top: 0px;
+        margin-bottom: 5px;
+        font-size: 21px;
+      }
+    </style>
+  </head>
 
-<body style="font-family: lato;">
+  <body style="font-family: lato">
     <button onclick="backTop()" id="myBtn" title="Go to top">^</button>
-    <p style="text-align: center;font-size: 22px;background-color: #00ff8000;" >بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</p>
+    <p style="text-align: center; font-size: 22px; background-color: #00ff8000">
+      بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
+    </p>
 
-    <input type="text" id="myInput" onkeyup="search()" class="form-control" style="width:20%; border-radius: 15px;" placeholder="Search..." title="Type in a name">
+    <input
+      type="text"
+      id="myInput"
+      onkeyup="search()"
+      class="form-control"
+      style="width: 20%; border-radius: 15px"
+      placeholder="Search..."
+      title="Type in a name"
+    />
 
-    <table id="myTable">
+    <table id="table">
+      <tbody id="tbody">
         <tr class="header">
-            <td style="text-align: center;font-size: 25px;">Dua For Daily Life</td>
+          <td style="text-align: center; font-size: 25px">
+            Dua For Daily Life
+          </td>
         </tr>
-		<tr>    
-            <td>Dua For Love Of Allah
-                <p>
-                  `اَللّٰهُمَّ إِنِّىْ أَسْأَلُكَ حُبَّكَ وَحُبَّ مَنْ يُحِبُّكَ وَالْعَمَلَ الَّذِىْ يُبَلِّغُنِىْ حُبَّكَ اَللّٰهُمَّ اجْعَلْ حُبَّكَ أَحَبَّ إِلَىَّ مِنْ نَفْسِىْ وَمَالِىْ وَأَهْلِىْ وَمِنَ الْمَاءِ الْبَارِدِ`
-                </p>
-                হে আল্লাহ! আমি তোমার কাছে তোমার ভালোবাসা প্রত্যাশা করি, আর যে তোমাকে ভালোবাসে, তার ভালোবাসা চাই এবং আমি ঐ কাজের শক্তি চাই, যে শক্তি আমাকে তোমার ভালোবাসার দিকে নিয়ে যাবে। হে আল্লাহ! তোমার ভালোবাসাকে আমার কাছে আমার জীবন, আমার ধন-সম্পদ, আমার পরিবার-পরিজন ও ঠাণ্ডা পানির চেয়েও বেশি পছন্দনীয় করে তোলো।)
-            </td> 
-        </tr>
-		<tr>    
-            <td>Dua For Pure Nafs
-                <p>اللَّهُمَّ آتِ نَفْسِي تَقْوَاهَا، وَزَكِّهَا أَنْتَ خَيْرُ مَنْ زَكَّاهَا، أَنْتَ وَلِيُّهَا وَمَوْلَاهَا، اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ قَلْبٍ لَا يَخْشَعُ، وَمِنْ نَفْسٍ لَا تَشْبَعُ، وَعِلْمٍ لَا يَنْفَعُ، وَدَعْوَةٍ لَا يُسْتَجَابُ لَهَا</p>
-				হে আল্লাহ! আমার আত্মায় তাকওয়া বা ভয় দান করুন। আর একে (আত্মাকে) মন্দ কাজ থেকে পবিত্র করুন; আপনিই উত্তম পবিত্রকারী আর আপনিই (আত্মার) বন্ধু এবং মালিক।
-				হে আল্লাহ! আমি আপনার কাছে ওই অন্তর থেকে আশ্রয় চাই যে অন্তর ভীত হয় না, আর ওই আত্মা থেকে যা তৃপ্ত হয় না, ওই ইলম বা জ্ঞান থেকে যা উপকারে আসে না। আর ওই দোয়া থেকে যা কবুল করা হয় না।
-            </td>
-        </tr>
-		<tr>    
-            <td>Dua For Forgiveness
-                <p>اَللّٰهُمَّ مَغْفِرَتُكَ أَوْسَعُ مِنْ ذُنُوْبِيْ وَرَحْمَتَكَ
- أَرْجَى عِنْدِيْ مِنْ عَمَلِيْ</p>
-  হে আল্লাহ আপনার ক্ষমা আমার গুনাহ থেকে অনেক বেশী প্রশস্ত এবং আপনার রহমত এর প্রতি আমি অনেক বেশী আশাবাদী আমার আমাল থেকে 
-            </td> 
-        </tr>
-		<tr>    
-            <td>Dua For
-                <p>اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ عَذَابِ الْقَبْرِ وَأَعُوذُ بِكَ مِنْ فِتْنَةِ الْمَسِيحِ الدَّجَّالِ، وَأَعُوذُ بِكَ مِنْ فِتْنَةِ الْمَحْيَا وَفِتْنَةِ الْمَمَاتِ، اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْمَأْثَمِ وَالْمَغْرَمِ</p>
-                কবরের আযাব থেকে, মসীহে দাজ্জালের ফিতনা থেকে এবং জীবন ও মৃত্যুর ফিতনা থেকে ইয় আল্লাহ! আপনার নিকট আশ্রয় প্রার্থনা করছি। ইয়া আল্লাহ্! গুনাহ্ ও ঋণগ্রস্থতা থেকে আপনার নিকট আশ্রয় চাই।
-            </td> 
-        </tr>
-		<tr>    
-            <td>Dua For
-                <p>سُبْحَانَ اللَّهِ وَبِحَمْدِهِ عَدَدَ خَلْقِهِ وَرِضَا نَفْسِهِ وَزِنَةَ عَرْشِهِ وَمِدَادَ كَلِمَاتِهِ</p>
-                আমি আল্লাহতায়ালার প্রশংসাসমেত পবিত্রতা ঘোষণা করছি। তার সৃষ্টিকুলের সংখ্যার পরিমাণ, তিনি সন্তুষ্ট হওয়া পরিমাণ, তার আরশের ওজন সমপরিমাণ, তার কথা লিপিবদ্ধ করার কালি পরিমাণ।
-            </td> 
-        </tr>
-		<tr>    
-            <td>Dua For Halal Rijik
-                <p>اللَّهُمَّ اكْفِني بِحَلاَلِكَ عَنْ حَرَامِكَ ، وَأغْنِنِي بِفَضْلِكَ عَمَّنْ سِواكَ</p>
-                হে আল্লাহ! হারামের পরিবর্তে তোমার হালাল রুজি আমার জন্য যথেষ্ট করো। আপনি আমাকে স্বীয় দয়া ও আনুগ্রহ দ্বারা অন্য সবার থেকে ধনী বানিয়ে দিন।
-            </td> 
-        </tr>
-        <tr>    
-            <td>Dua For
-                <p>اَللّٰهُمَّ إنِّي أَسألُكَ الهُدَى وَالتُّقَى وَالعَفَافَ وَالغِنَى</p>
-            হে আল্লাহ আমি আপনার কাছে হেদায়েত কামনা করি এবং আপনার ভয় তথা পরহেজগারি কামনা করি এবং আপনার কাছে সুস্থতা তথা নৈতিক পবিত্রতা কামনা করি এবং সম্পদ তথা সামর্থ্য কামনা করি।
-            </td> 
-        </tr>
-        <tr>
-            <td>Dua For
-                <p>اللَّهُمَّ بَاعِدْ بَيْنِي وَبَيْنَ خَطَايَايَ كَمَا بَاعَدْتَ بَيْنَ الْمَشْرِقِ وَالْمَغْرِبِ، اللَّهُمَّ نَقِّنِي مِنْ خَطَايَايَ كَمَا يُنَقَّى الثَّوْبُ الأَبْيَضُ مِنْ الدَّنَسِ، اللَّهُمَّ اغْسِلْنِي مِنْ خَطَايَايَ بِالْمَاءِ وَالثَّلْجِ وَالْبَرَدِ</p>
-				হে আল্লাহ্! তুমি আমাকে আমার পাপগুলো থেকে এত দূরে রাখ যেমন পূর্ব ও পশ্চিম পরস্পরকে পরস্পর থেকে দূরে রেখেছ। হে আল্লাহ্! তুমি আমাকে আমার পাপ হতে এমন ভাবে পরিষ্কার করে দাও, যেমন সাদা কাপড়কে ময়লা হতে পরিষ্কার করা হয়। হে আল্লাহ্! তুমি আমাকে আমার পাপ হতে (পবিত্র করার জন্য) পানি, বরফ ও শিশির দ্বারা ধুয়ে পরিষ্কার করে দাও
-            </td> 
-        </tr>      
-        </tr>
-        <tr>    
-            <td>Dua For
-                <p>اَللَّهُمَّ اغْفِرْ لِي مَا قَدَّمْتُ وَمَا أَخَّرْتُ وَمَا أَسْرَرْتُ وَمَا أَعْلَنْتُ وَمَا أَسْرَفْتُ وَمَا أَنْتَ أَعْلَمُ بِهِ مِنِّي أَنْتَ الْمُقَدِّمُ وَأَنْتَ الْمُؤَخِّرُ لاَ إِلَهَ إِلاَّ أَنْتَ</p>
-				হে আল্লাহ! তুমি আমার আগের ও পরের সব গোপন ও প্রকাশ্য গোনাহ ক্ষমা কর (এবং ক্ষমা কর সেসব গোনাহ) যাতে আমি বাড়াবাড়ি করেছি। আর সেসব গোনাহ যে বিষয়ে তুমি আমার চেয়ে বেশি জান। তুমি প্রথম এবং শেষের মালিক। তুমি ব্যতিত কোনো উপাস্য নেই।
-            </td> 
-        </tr>
-        <tr>    
-            <td>Dua For Fanah Soytan
-                <p></p>
-            </td> 
-        </tr>
-        <tr>    
-            <td>Dua For
-                <p></p>
-            </td> 
-        </tr>
-        <tr>    
-            <td>Dua For
-                <p></p>
-            </td> 
-        </tr>
-        <tr>    
-            <td>Dua For
-                <p>
-                </p>
-            </td> 
-        </tr>
-        <tr>    
-            <td>Dua For
-                <p></p>
-            </td> 
-        </tr>
-        <tr>    
-            <td>Dua For
-                <p></p>
-            </td> 
-        </tr>
-        <tr>    
-            <td>Dua For
-                <p></p>
-            </td> 
-        </tr>
-        <tr>    
-            <td>Dua For
-                <p></p>
-            </td> 
-        </tr>
+      </tbody>
     </table>
     <script src="./script.js"></script>
-</body>
-
+  </body>
 </html>

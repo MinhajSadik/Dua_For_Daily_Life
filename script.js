@@ -17,22 +17,25 @@ fetch('./dua.json')
     );
 
 function appendData(data) {
-    table = document.getElementById("myTable");
-    let tr = document.createElement('tr')
+    let dataTable = document.getElementById("tbody")
 
 
     for (let i = 0; i < data.length; i++) {
         const dua = data[i]
+        let tr = document.createElement('tr')
         let td = document.createElement('td');
+        let th = document.createElement('th');
         let p = document.createElement('p')
 
-        // td.innerHTML = dua.title
-        // td.innerHTML = dua.dua
+        th.innerHTML = dua.title
+        p.innerHTML = dua.dua
+        td.innerHTML = dua.significance
 
 
-        // table.appendChild(tr)
-        // tr.appendChild(td)
-        // tr.appendChild(p)
+        dataTable.appendChild(tr)
+        tr.appendChild(th)
+        tr.appendChild(td)
+        tr.appendChild(p)
     }
 }
 
@@ -60,7 +63,7 @@ function search() {
     var input, filter, table, tr, td, i, txtValue;
     input = document.getElementById("myInput");
     filter = input.value.toUpperCase();
-    table = document.getElementById("myTable");
+    table = document.getElementById("table");
     tr = table.getElementsByTagName("tr");
     for (i = 0; i < tr.length; i++) {
         td = tr[i].getElementsByTagName("td")[0];
