@@ -1,3 +1,14 @@
+// let filePath = './dua.json'
+// let arrayImport;
+// (async () => {
+//     arrayImport = await import(filePath, {
+//         assert: { type: "json" },
+//     });
+// })();
+
+// const inputArray = arrayImport.default;
+
+
 fetch('./dua.json')
     .then((res) => res.json())
     .then((data) => appendData(data))
@@ -6,17 +17,22 @@ fetch('./dua.json')
     );
 
 function appendData(data) {
+    table = document.getElementById("myTable");
+    let tr = document.createElement('tr')
+
+
     for (let i = 0; i < data.length; i++) {
         const dua = data[i]
-        // let div = document.createElement("div");
-        let tr = document.createElement('tr')
         let td = document.createElement('td');
         let p = document.createElement('p')
-        td.innerText = dua.title
 
-        // div.innerHTML = 'Name: ' + data[i].firstName + ' ' + data[i].lastName;
-        tr.appendChild(td)
-        tr.appendChild(p)
+        // td.innerHTML = dua.title
+        // td.innerHTML = dua.dua
+
+
+        // table.appendChild(tr)
+        // tr.appendChild(td)
+        // tr.appendChild(p)
     }
 }
 
